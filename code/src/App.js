@@ -1,12 +1,12 @@
 import React from 'react';
 import data from './data.json';
 
-console.log(data);
+import Album from './Album';
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <Album musicData ={data}/>
     </div>
   );
 }
