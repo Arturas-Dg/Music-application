@@ -5,8 +5,6 @@ import Album from './Album';
 
 export const App = () => {
   return (
-    <div>
       <Album musicData ={data}/>
-    </div>
   );
 }

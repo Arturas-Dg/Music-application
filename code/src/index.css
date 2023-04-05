@@ -5,9 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(24,24,24);
+  color: antiquewhite;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.Header {
+  padding-left: 20px;
+  border-bottom: 2px solid rgb(50,50,50);
+}
+
+#BorderBottom {
+  left: -50px;
+  right: -50px;
+}
+
+.MusicAlbum {
+  padding : 20px;
+}
+
+.ArtistName {
+  color: rgb(144,144,144);
+
+}
+
+.ArtistName:hover {
+  color: white;
+  font-size: 17px;
+  text-decoration: underline;
 }
