@@ -19,17 +19,27 @@ code {
   border-bottom: 2px solid rgb(50,50,50);
 }
 
-#BorderBottom {
-  left: -50px;
-  right: -50px;
+.MusicAlbum {
+  padding : 20px;                                            
 }
 
-.MusicAlbum {
-  padding : 20px;
+.AlbumCover:hover {
+  opacity: 50%;
 }
+
+.TrackName {
+  width: fit-content;
+}
+
+.TrackName:hover {
+  text-decoration: underline;
+}
+
 
 .ArtistName {
   color: rgb(144,144,144);
+  max-width: 300px;
+  width: fit-content;
 
 }
 
