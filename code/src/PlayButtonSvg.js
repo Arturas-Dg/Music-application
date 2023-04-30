@@ -1,5 +1,5 @@
 import React from 'react';
-const SVGButton = (props) => (
+const SVGButton = () => (
   <svg
     className="PlayButton"
     xmlns="http://www.w3.org/2000/svg"

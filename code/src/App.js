@@ -1,17 +1,14 @@
 import React from 'react';
 import data from './data.json';
+import Album from './Album'
 
-import Album from './Album';
-import button from './PlayButtonSvg';
-
+import { ReactComponent as PlayButton } from './assets/icons/play.svg';
 
 export const App = () => {
   return (
-      <Album 
+      <Album
       musicData={data}
-      playButton={button}
-       />
-      
-          );
-}
- 
+      playButton={PlayButton}
+      />
+    );
+};
