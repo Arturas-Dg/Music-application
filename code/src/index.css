@@ -56,17 +56,20 @@ code {
 }
 
 .play-button {
+  display: none;
   top: 125px;
   right: 125px;
 }
 
 .dots {
+  display: none;
   top: 125px;
   right: 200px;
 
 }
 
 .heart {
+  display: none;
   top: 125px;
   right: 50px;
 
@@ -79,6 +82,12 @@ code {
   filter: invert(100%) sepia(7%) saturate(5908%) hue-rotate(290deg) brightness(146%) contrast(90%);
 }
 
-.album-cover:hover + .heart {
+.cover-container:hover .heart {
+  display: block;
+}
+.cover-container:hover .dots {
+  display: block;
+}
+.cover-container:hover .play-button {
   display: block;
 }
