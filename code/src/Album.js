@@ -59,12 +59,15 @@ const Album = (props) => {
             <h3 className='Header'>New albums & singles</h3>
             <div className='MusicAlbum'>
               <div className='cover-container'>
-                <img src={artistExample.albums.items[0].images[1].url} alt='Album cover' id='AlbumCover' />
+                <img src={artistExample.albums.items[0].images[1].url} alt='Album cover' className='album-cover' />
                <props.playButton className="play-button" />
+               <props.moreInfo className="dots" />
+               <props.likeSong className='heart' />
               </div>
                 <div className='TrackName'>{artistExample.albums.items[0].name}</div>
                 <div className='ArtistName'>{artistExample.albums.items[0].artists[0].name}</div>
             </div>
+            {console.log(props)}
     </>
 
   );
