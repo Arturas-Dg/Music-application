@@ -1,7 +1,7 @@
-<svg xmlns ="http://www.w3.org/2000/svg" viewBox="0 0 10 2">
+<svg xmlns ="http://www.w3.org/2000/svg" viewBox="0 0 6 2" width="30px" height="30px">
     <g id="play-button">
-        <circle cx="2.5" cy="1" r="0.5"/>
-        <circle cx="5" cy="1" r="0.5"/>
-        <circle cx="7.5" cy="1" r="0.5"/>
+        <circle cx="0.5" cy="1" r="0.5"/>
+        <circle cx="3" cy="1" r="0.5"/>
+        <circle cx="5.5" cy="1" r="0.5"/>
     </g>
 </svg>

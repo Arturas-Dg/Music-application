@@ -1,20 +1,35 @@
-import React from 'react';
-import data from './data.json';
-import Album from './Album'
-
-import { ReactComponent as PlayButton } from './assets/icons/play.svg';
-import { ReactComponent as MoreInfo } from './assets/icons/dots.svg';
-import { ReactComponent as LikeSong } from './assets/icons/heart.svg';
-
+import React from "react";
+import data from "./data.json";
+import Album from "./Album";
 
 export const App = () => {
+  const arrayOfAlbums = data.albums.items;
+
   return (
-      <Album
-      musicData={data}
-      playButton={PlayButton}
-      moreInfo={MoreInfo}
-      likeSong={LikeSong}
-      
-      />
-    );
+    <>
+      <div className="header-container">
+        <h3 className="Header">New albums & singles</h3>
+      </div>
+      <div className="albums">
+        {arrayOfAlbums.map((artist) => {
+          return (
+            <>
+              <Album
+                data={artist}
+                image={artist.images[1].url}
+                trackName={artist.name}
+                artistName={artist.artists.map((artists) => {
+                  artists.name;
+                })}
+                artistHref={artist.external_urls.spotify}
+                key={artist.id}
+              />
+              {console.log(artist.artists)}
+            </>
+          );
+        })}
+      </div>
+      {/* {console.log(arrayOfAlbums[0].artists[0].external_urls.spotify)} */}
+    </>
+  );
 };
