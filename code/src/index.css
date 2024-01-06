@@ -14,6 +14,16 @@ code {
     monospace;
 }
 
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #a0a0a0;
+  max-width: 300px;
+  width: fit-content;
+  margin-top: 7px;
+}
+
 .Header {
   padding-left: 20px;
   border-bottom: 2px solid rgb(50,50,50);
@@ -27,7 +37,8 @@ code {
 
 .music-album {
   padding : 40px;    
-  display: flex;  
+  display: flex;
+  flex-direction: column;  
   width: 300px;                                      
 }
 .cover-container {
@@ -90,6 +101,10 @@ code {
   margin-top: 7px;
 }
 
+.artist-name-link{
+text-decoration: none;
+}
+
 .ArtistName {
   font-size: 14px;
   font-family: Helvetica;
@@ -97,6 +112,7 @@ code {
   max-width: 300px;
   width: fit-content;
   margin-top: 7px;
+  text-decoration: none;
 }
 
 .TrackName:hover {

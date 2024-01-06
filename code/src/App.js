@@ -18,18 +18,19 @@ export const App = () => {
                 data={artist}
                 image={artist.images[1].url}
                 trackName={artist.name}
-                artistName={artist.artists.map((artists) => {
-                  artists.name;
-                })}
-                artistHref={artist.external_urls.spotify}
+                artistName={artist.artists.map((artist) => artist.name)}
+                albumHref={artist.external_urls.spotify}
+                artistHref={artist.artists.map(
+                  (item) => item.external_urls.spotify
+                )}
                 key={artist.id}
               />
-              {console.log(artist.artists)}
             </>
           );
         })}
       </div>
-      {/* {console.log(arrayOfAlbums[0].artists[0].external_urls.spotify)} */}
     </>
   );
 };
+
+// {album.artists.map((item) => <a>{item.name}</a>)}
